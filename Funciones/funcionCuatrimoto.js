@@ -13,7 +13,7 @@
 /**
  * La url base para los servicios 
  */
-var service = "http://localhost:8080/api/Quadbike/"
+var service = "http://129.151.110.248:8080/api/Quadbike/"
 
 /**
  * traerInformacionCuatrimotos()
@@ -224,7 +224,7 @@ function borrarCuatrimoto(codigo) {
 function autoInicioCategoria() {
     
     $.ajax({
-        url: "http://localhost:8080/api/Category/all",
+        url: "http://129.151.110.248:8080/api/Category/all",
         type: "GET",
         datatype: "JSON",
         success: function (respuesta) {

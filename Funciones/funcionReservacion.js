@@ -13,7 +13,7 @@
 /**
  * La url base para los servicios de la tabla Reservaciones
  */
-var serviceR = "http://localhost:8080/api/Reservation/";
+var serviceR = "http://129.151.110.248:8080/api/Reservation/";
 
 /**
  * Función trae todos los registros de las cuatrimotos con petición GET
@@ -94,7 +94,7 @@ function guardarInformacionReservaciones() {
  function autoInicioCliente(){
     
     $.ajax({
-        url: "http://localhost:8080/api/Client/all",
+        url: "http://129.151.110.248:8080/api/Client/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -118,7 +118,7 @@ function guardarInformacionReservaciones() {
 function autoInicioCuatrimoto(){
     
     $.ajax({
-        url: "http://localhost:8080/api/Quadbike/all",
+        url: "http://129.151.110.248:8080/api/Quadbike/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
