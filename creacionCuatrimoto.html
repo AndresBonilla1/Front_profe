@@ -6,51 +6,72 @@
     <title>Formulario Cuatrimoto</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" language="JavaScript" src="properties.js"></script>
-    <script type="text/javascript" language="JavaScript" src="Funciones/funcionCuatrimoto.js"></script>
-    
+    <script type="text/javascript" language="JavaScript" src="Funciones/cuatrimoto.js"></script>
+    <link rel="stylesheet" type="text/css" href="Estilos/estiloCuatrimoto.css">
 </head>
 
 <body>
 
-    <h1>Formulario Cuatrimoto</h1>
 
-    <br />
-    <label>Nombre</label>
-    <input type="text" id="name" placeholder="name" name="name" maxlength="45"/>
+    <header id="cabeceraCuatrimoto">
+        <div>
+            <h1>Formulario Cuatrimoto</h1>
+        </div>
+    </header>
 
-    <br />
-    <br />
-    <label>Marca</label>
-    <input type="text" id="brand" placeholder="brand" name="brand" maxlength="45"/>
+    <main>
+        <div>
+            <section id="seccionImagenCuatrimoto">
+                <img id="imagenCuatrimoto" src="https://m.media-amazon.com/images/I/61CtvG7moKL._AC_SY355_.jpg">
+            </section>
+            <section id="formularioCuatrimoto">
+                <br />
+                <label class="label1">Nombre</label>
+                <input class="input1" type="text" id="name" placeholder="name" name="name" maxlength="45" />
+                
+                <br />
+                <br />
+                <label class="label2">Marca</label>
+                <input class="input1" type="text" id="brand" placeholder="brand" name="brand" maxlength="45" />
 
-    <br />
-    <br />
-    <label>Modelo (1970-2022)</label>
-    <input type="number" id="year" placeholder="year" name="year"/>
+                <br />
+                <br />
+                <label class="label3">Modelo (1970-2022)</label>
+                <input class="input1" type="number" id="year" placeholder="year" name="year" />
 
-    <br />
-    <br />
-    <label>Descripción</label>
-    <input type="text" id="description" placeholder="description" name="description" maxlength="250"/>
+                <br />
+                <br />
+                <label class="label4">Descripción</label>
+                <input class="input1" type="text" id="description" placeholder="description" name="description" maxlength="250" />
 
-    <br />
-    <br />
-    <label>Categoria</label>
-    <select id="select-category"></select>
+                <br />
+                <br />
+                <label class="label5">Categoria</label>
+                <select id="select-category"></select>
 
+                <br />
+                <br />
+                <br />
+                <button onclick="guardarInformacionCuatrimotos()">Registrar Cuatrimoto</button>
+                <form>
+                    <a href="index.html">
+                        <input class="input2" type="button" value="Regresar">
+                    </a>
+                </form>
+                
+            </section>
+            
+
+           
+        </div>
+    </main>
     <br />
-    <br />
-    <br />
-    <button onclick="guardarInformacionCuatrimotos()">Registrar Cuatrimoto</button>
-    <a href="index.html" id="enlace2">Regresar</a></p>
     <br />
 
     <script type="text/javascript">
-    
         window.onload = autoInicioCategoria();
-
     </script>
-    
+
 </body>
 
 </html>

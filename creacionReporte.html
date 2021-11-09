@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reportes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" language="JavaScript" src="properties.js"></script>
+    <script type="text/javascript" language="JavaScript" src="Funciones/reporte.js"></script>
+    <link rel="stylesheet" href="Estilos/estiloReporte.css">
+
+</head>
+
+<body>
+
+
+    <body>
+        <header id="cabeceraReporte">
+            <div>
+                <h1>Reportes</h1>
+            </div>
+        </header>
+
+        <main>
+            <div>
+                <section id="formularioReporte">
+
+                    <p class="p">Debe seleccionar las fechas para generar <br><b>reporte por fecha</b>.</p>
+                    <br/>
+
+                    <label>Fecha Incial</label>
+                    <input type="date" id="RstarDate" placeholder="descripcion">
+
+                    <br />
+                    <br />
+                    <label>Fecha Devolución</label>
+                    <input type="date" id="RdevolutionDate" placeholder="descripcion">
+
+                    <br/>
+                    <br/>
+
+
+
+                    <div class="row" id="divmayor">
+
+                        <div class="col-sm-3">
+                            <button onclick="reporteStatus()"> Generar Reporte Status Reservas </button>
+
+                            <br/>
+                            <table id="resultadoStatus" cellpadding="1" cellspacing="1" border="1"></table>
+
+                        </div>
+
+                        <div class="col-sm-3">
+                            <button onclick="reporteFecha()"> Generar Reporte por fecha </button>
+                            <br/>
+                            <table id="resultadoDate" cellpadding="1" cellspacing="1" border="1"></table>
+
+                        </div>
+
+                        <div class="col-sm-3">
+                            <button onclick="reporteClientes()"> Generar Reporte Clientes  </button>
+                            <br/>
+                            <table id="resultadoClientes" cellpadding="1" cellspacing="1" border="1"></table>
+                        </div>
+                        <div class="col-sm-8">
+                            <a href="index.html">
+                                <input class="input2" type="button" value="Regresar">
+                            </a>
+                        </div>
+                </section>
+                </div>
+        </main>
+    </body>
+
+</html>

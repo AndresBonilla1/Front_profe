@@ -6,39 +6,57 @@
     <title>Formulario Cliente</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" language="JavaScript" src="properties.js"></script>
-    <script type="text/javascript" language="JavaScript" src="Funciones/funcionCliente.js"></script>
-
+    <script type="text/javascript" language="JavaScript" src="Funciones/cliente.js"></script>
+    <link rel="stylesheet" type="text/css" href="Estilos/estiloCliente.css">
 </head>
 
 <body>
 
-    <h1>Formulario Cliente</h1>
+    <header id="cabeceraCliente">
+        <div>
+            <h1>Formulario Cliente</h1>
+        </div>
+    </header>
 
-    <br />
-    <label>Nombre</label>
-    <input type="text" id="nameCL" placeholder="name" name="name"  maxlength="250"/>
+    <main>
+        <div>
+            <aside id="seccionImagenCliente">
+                <img id="imagenCliente" src="https://imagenes.elpais.com/resizer/vXsOHcEbO0Bj057GqKAI5aOHgqk=/414x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/3YQTCIQQZMIJREKONU4WLN2K3E.jpg" alt="Reservacion de un vehiculo">
+            </aside>
+            <section id="formularioCliente">
+                <br />
+                <label class="label1">Nombre</label>
+                <input class="input1" type="text" id="nameCL" placeholder="name" name="name" maxlength="250" />
+                <br>
+                <br>
+                <br>
+                <label class="label2">Email</label>
+                <input class="input1" type="email" id="email" placeholder="email" name="email" maxlength="45" />
+                <br>
+                <br />
+                <br />
+                <label class="label3">Password</label>
+                <input class="input1" type="text" id="password" placeholder="password" name="password" maxlength="45">
+                <br>
+                <br />
+                <br />
+                <label class="label4">Edad</label>
+                <input class="input1" type="number" id="age" placeholder="age" name="age" />
 
-    <br />
-    <br />
-    <label>Email</label>
-    <input type="email" id="email" placeholder="email" name="email" maxlength="45"/>
-
-    <br />
-    <br />
-    <label>Password</label>
-    <input type="text" id="password" placeholder="password" name="password" maxlength="45">
-
-    <br />
-    <br />
-    <label>Edad</label>
-    <input type="number" id="age" placeholder="age" name="age" />
-
-    <br />
-    <br />
-    <br />
-    <button onclick="guardarInformacionClientes()">Registrar Cliente</button>
-    <a href="index.html" id="enlace2">Regresar</a></p>
-    <br />
+                <br />
+                <br />
+                <br />
+                <button onclick="guardarInformacionClientes()">Registrar Cliente</button>
+                <form>
+                    <a href="index.html">
+                        <input class="input2" type="button" value="Regresar">
+                    </a>
+                </form>
+                <br />
+            </section>
+           
+        </div>
+    </main>
 
 </body>
 
